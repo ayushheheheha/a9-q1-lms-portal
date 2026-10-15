@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>University Learning Management Portal</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f2f4f8; margin: 0; color: #1f2933; }
+  header { background: #123c69; color: #fff; text-align: center; padding: 22px 12px; }
+  header h1 { margin: 0 0 4px; font-size: 26px; }
+  header p { margin: 0; font-size: 14px; }
+  nav { background: #0d2c4d; text-align: center; padding: 8px; }
+  nav a { color: #cfe3ff; margin: 0 12px; text-decoration: none; font-size: 14px; }
+  main { max-width: 900px; margin: 20px auto; padding: 0 14px; }
+  section { background: #fff; border-radius: 6px; padding: 14px 18px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+  h2 { margin-top: 0; color: #123c69; border-bottom: 2px solid #123c69; padding-bottom: 4px; font-size: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { border-bottom: 1px solid #d9dee5; padding: 7px 8px; text-align: left; }
+  th { background: #e8eef6; }
+  .faculty { display: flex; gap: 12px; flex-wrap: wrap; }
+  .card { flex: 1; min-width: 200px; border: 1px solid #d9dee5; border-radius: 6px; padding: 10px; background: #fafbfd; font-size: 14px; }
+  .card h3 { margin: 0 0 4px; font-size: 16px; }
+  ul { margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.7; }
+  .due { color: #b3261e; font-weight: bold; }
+  footer { text-align: center; font-size: 13px; color: #52606d; padding: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>University Learning Management Portal</h1>
+  <p>Vellore Institute of Technology - School of Computer Science and Engineering</p>
+</header>
+<nav>
+  <a href="#courses">Courses</a><a href="#faculty">Faculty</a><a href="#resources">Resources</a>
+  <a href="#assignments">Assignments</a><a href="#exams">Examinations</a>
+</nav>
+<main>
+  <section id="courses">
+    <h2>Course Information</h2>
+    <table>
+      <tr><th>Code</th><th>Course</th><th>Credits</th><th>Faculty</th></tr>
+      <tr><td>ISWE406P</td><td>Agile Development Process &amp; DevOps</td><td>3</td><td>Dr. A. Raman</td></tr>
+      <tr><td>CSE3009</td><td>Database Management Systems</td><td>4</td><td>Dr. S. Priya</td></tr>
+      <tr><td>CSE3011</td><td>Software Testing</td><td>3</td><td>Dr. K. Mehta</td></tr>
+    </table>
+  </section>
+  <section id="faculty">
+    <h2>Faculty Profiles</h2>
+    <div class="faculty">
+      <div class="card"><h3>Dr. A. Raman</h3>Professor - DevOps and Cloud<br>Email: araman@vit.ac.in</div>
+      <div class="card"><h3>Dr. S. Priya</h3>Associate Professor - Databases<br>Email: spriya@vit.ac.in</div>
+      <div class="card"><h3>Dr. K. Mehta</h3>Assistant Professor - Testing<br>Email: kmehta@vit.ac.in</div>
+    </div>
+  </section>
+  <section id="resources">
+    <h2>Learning Resources</h2>
+    <ul>
+      <li>Lecture notes - Module 1 to Module 5 (PDF)</li>
+      <li>Docker and Kubernetes lab manual</li>
+      <li>Jenkins pipeline examples (GitHub repository)</li>
+      <li>Previous year question papers</li>
+    </ul>
+  </section>
+  <section id="assignments">
+    <h2>Assignment Announcements</h2>
+    <ul>
+      <li>Assessment VIII - Containerize and deploy with Kubernetes - <span class="due">Due 12-Oct-2026</span></li>
+      <li>Assessment IX - CI/CD with versioned releases and rollback - <span class="due">Due 19-Oct-2026</span></li>
+    </ul>
+  </section>
+  <section id="exams">
+    <h2>Examination Schedule</h2>
+    <table>
+      <tr><th>Exam</th><th>Date</th><th>Time</th><th>Venue</th></tr>
+      <tr><td>Continuous Assessment Test II</td><td>03-Nov-2026</td><td>10:00 AM</td><td>SJT 501</td></tr>
+      <tr><td>Final Assessment Test</td><td>14-Dec-2026</td><td>02:00 PM</td><td>TT 302</td></tr>
+    </table>
+  </section>
+</main>
+<footer>LMS Portal | Release 0.0.0-dev | Contact: lms.support@vit.ac.in</footer>
+</body>
+</html>
